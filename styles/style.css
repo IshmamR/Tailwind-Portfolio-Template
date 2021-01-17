@@ -1,0 +1,44 @@
+* {scroll-behavior: smooth;}
+body {
+	margin: 0;
+	font-family: Arial;
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+a:focus, button:focus {outline: none;}
+
+.Hero {
+	min-height: 100vh;
+}
+.hero-image img {
+	max-height: 50vh;
+	object-fit: contain;
+}
+
+.blob {
+	animation: animated linear infinite;
+}
+.dur-fast {animation-duration: 1s;}
+.dur-slow {animation-duration: 5s;}
+@keyframes animated {
+	0%,100% {
+		border-radius: 63% 36% 27% 73% / 55% 58% 42% 45%;
+	}
+	25% {
+		border-radius: 45% 34% 55% 38% / 52% 39% 64% 27%;
+	}
+	50% {
+		border-radius: 28% 72% 44% 56% / 42% 40% 60% 51%;
+	}
+	75% {
+		border-radius: 34% 60% 70% 30% / 47% 62% 38% 53%;
+	}
+}
+
+
+@media only screen and (max-width: 420px) {
+	.hero-img img {
+		max-height: 30vh !important;
+	}
+}

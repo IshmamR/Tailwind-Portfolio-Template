@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A custom worpress theme">
+	<meta name="author" content="Ishmam">
+
+	<title>Epimethewz</title>
+
+	<link rel="stylesheet" type="text/css" href="styles/tailwind.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<div class="App">
+		<div 
+			class="NavBar bg-white bg-opacity-0 text-white shadow-none w-full py-3 fixed z-50 transition-all duration-500 ease-in">
+			<div class="flex justify-between items-center w-10/12 mx-auto">
+				<a href="#hero">
+					<img class="w-10" src="./images/electrode.png" alt="IR" />
+				</a>
+
+				<div class="flex items-center">
+					<a href="#projects" class="text-lg md:text-xl ml-1 md:ml-2">
+						<span class="px-1 md:px-3 py-2 hover:shadow-inner">Projects</span>
+					</a>
+					<a href="#about" class="text-lg md:text-xl ml-1 md:ml-2">
+						<span class="px-1 md:px-3 py-2 hover:shadow-inner">About</span>
+					</a>
+					<a href="#contact" class="text-lg md:text-xl ml-1 md:ml-2">
+						<span class="px-1 md:px-3 py-2 hover:shadow-inner">Contact</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- NavBar section end -->
+
+		<!-- <Hero heroData={content.hero} /> -->
+		<div class="Hero w-full flex flex-wrap items-end justify-center bg-gradient-to-r from-green-500 to-blue-700" id="hero">
+			<div class="w-10/12 mx-auto flex md:flex-row-reverse flex-wrap items-center justify-between mt-10 md:mt-20">
+				<div class="hero-image w-full lg:w-2/5 flex items-center justify-center">
+					<img src="./images/blob.png" class="dur-slow shadow-2xl blob" alt="LOGO" />
+				</div>
+
+				<div class="text-center lg:text-left text-white mx-auto lg:mx-0">
+					<h2 class="text-2xl md:text-3xl md:text-5xl font-bold">
+						Hi! 
+						<br /> 
+						Ishmam Rahman
+					</h2>
+					<h1 class="text-xl md:text-2xl mb-0 md:mt-2">
+						<!-- <Typical
+							steps={heroData.typical}
+							loop={Infinity}
+						/> -->
+					</h1>
+					<a href="#contact">
+						<button class="bg-blue-400 md:bg-indigo-500 px-6 md:px-10 py-2 md:py-3 mt-2 md:mt-10 rounded-md shadow-md hover:shadow-inner">
+							Contact
+						</button>
+					</a>
+				</div>
+			</div>
+
+			<div class="scroll-down w-full mx-auto flex items-center justify-center">
+				<a href="#projects">
+					<button class="font-mono border-white border-2 rounded-xl px-2 py-3 text-white animate-bounce">
+						V
+					</button>
+				</a>
+			</div>
+		</div>
+		<!-- Hero section end -->
+
+		<!-- <Projects projData={content.projects} /> -->
+		<div class="Projects bg-white" id="projects">
+			<div class="bg-gradient-to-bl from-transparent to-white py-5">
+			
+			<h1 class="text-5xl text-center my-16">Recent Projects...</h1>
+				<!-- Single project -->
+				<div class="Project w-10/12 lg:w-2/3 mx-auto mb-10 flex flex-wrap items-center justify-between">
+					<div class="projImg md:w-1/3">
+						<img 
+							class="w-11/12 md:h-40 lg:h-52 object-cover md:w-auto mx-auto rounded-lg md:shadow-md" 
+							src="./images/projects/proj-1.jpg" alt="Project-1" 
+						/>
+					</div>
+
+					<div class="projDesc w-full md:w-3/5 shadow-md md:shadow-2xl rounded-lg p-3 md:p-6 text-center md:text-left">
+						<h1 class="text-4xl mb-2">Project 1</h1>
+						<p class="text-lg mb-3">
+							Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Commodi maiores nulla consequuntur optio dicta eum, temporibus laboriosam, ullam? Quae soluta aperiam, corrupti autem veniam suscipit modi voluptatem deserunt, ipsa iste!
+						</p>
+						<a href="https://github.com" 
+							class="bg-blue-700 hover:bg-green-400 px-5 py-2 mr-4 text-white rounded-3xl"
+							target="_blank" rel="noreferrer"
+						>
+							Github
+						</a>
+						<a href="#" 
+							class="bg-green-500 hover:bg-blue-500 px-5 py-2 text-white rounded-3xl"
+							target="_blank" rel="noreferrer"
+						>
+							Live
+						</a>
+					</div>
+				</div>
+				<!-- Single project end -->
+				<!-- Single project -->
+				<div class="Project w-10/12 lg:w-2/3 mx-auto mb-10 flex flex-row-reverse flex-wrap items-center justify-between">
+					<div class="projImg md:w-1/3">
+						<img 
+							class="w-11/12 md:h-40 lg:h-52 object-cover md:w-auto mx-auto rounded-lg md:shadow-md" 
+							src="./images/projects/proj-2.jpg" alt="Project-2" 
+						/>
+					</div>
+
+					<div class="projDesc w-full md:w-3/5 shadow-md md:shadow-2xl rounded-lg p-3 md:p-6 text-center md:text-left">
+						<h1 class="text-4xl mb-2">Project 2</h1>
+						<p class="text-lg mb-3">
+							Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Commodi maiores nulla consequuntur optio dicta eum, temporibus laboriosam, ullam? Quae soluta aperiam, corrupti autem veniam suscipit modi voluptatem deserunt, ipsa iste!
+						</p>
+						<a href="https://github.com" 
+							class="bg-blue-700 hover:bg-green-400 px-5 py-2 mr-4 text-white rounded-3xl"
+							target="_blank" rel="noreferrer"
+						>
+							Github
+						</a>
+						<a href="#" 
+							class="bg-green-500 hover:bg-blue-500 px-5 py-2 text-white rounded-3xl"
+							target="_blank" rel="noreferrer"
+						>
+							Live
+						</a>
+					</div>
+				</div>
+				<!-- Single project end -->
+			</div>
+		</div>
+		<!-- Project section end -->
+
+		<!-- <Skills skillData={content.skills} /> -->
+		<div class="Skills w-full bg-gray-100 py-14" id="skills">
+			<h3 class="text-4xl text-center mb-6">Skillset</h3>
+			<div class="w-10/12 mx-auto flex flex-wrap items-center justify-around">
+				<div class="bg-white w-20 h-20 rounded-full shadow-xl hover:shadow-inner p-4 my-3 md:mx-4 lg:mx-1">
+					<img class="w-16 object-contain" src="./images/techs/html.png" alt="HTML5" title="javascript" />
+				</div>
+				<div class="bg-white w-20 h-20 rounded-full shadow-xl hover:shadow-inner p-4 my-3 md:mx-4 lg:mx-1">
+					<img class="w-16 object-contain" src="./images/techs/css.png" alt="CSS3" title="javascript" />
+				</div>
+				<div class="bg-white w-20 h-20 rounded-full shadow-xl hover:shadow-inner p-4 my-3 md:mx-4 lg:mx-1">
+					<img class="w-16 object-contain" src="./images/techs/javascript.png" alt="JS" title="javascript" />
+				</div>
+				<div class="bg-white w-20 h-20 rounded-full shadow-xl hover:shadow-inner p-4 my-3 md:mx-4 lg:mx-1">
+					<img class="w-16 object-contain" src="./images/techs/react.png" alt="ReactJS" title="javascript" />
+				</div>
+				<div class="bg-white w-20 h-20 rounded-full shadow-xl hover:shadow-inner p-4 my-3 md:mx-4 lg:mx-1">
+					<img class="w-16 object-contain" src="./images/techs/nodejs.png" alt="ReactJS" title="javascript" />
+				</div>
+				<div class="bg-white w-20 h-20 rounded-full shadow-xl hover:shadow-inner p-4 my-3 md:mx-4 lg:mx-1">
+					<img class="w-16 object-contain" src="./images/techs/mongodb.png" alt="ReactJS" title="javascript" />
+				</div>
+				<div class="bg-white w-20 h-20 rounded-full shadow-xl hover:shadow-inner p-4 my-3 md:mx-4 lg:mx-1">
+					<img class="w-16 object-contain" src="./images/techs/bootstrap.png" alt="ReactJS" title="javascript" />
+				</div>
+				<div class="bg-white w-20 h-20 rounded-full shadow-xl hover:shadow-inner p-4 my-3 md:mx-4 lg:mx-1">
+					<img class="w-16 object-contain" src="./images/techs/tailwind.png" alt="ReactJS" title="javascript" />
+				</div>
+				<div class="bg-white w-20 h-20 rounded-full shadow-xl hover:shadow-inner p-4 my-3 md:mx-4 lg:mx-1">
+					<img class="w-16 object-contain" src="./images/techs/electron.png" alt="ReactJS" title="javascript" />
+				</div>
+			</div>
+			<div class="w-10/12 mx-auto flex flex-wrap">
+				<div class="SkillSet w-full md:w-1/2 lg:w-1/4 bg-white shadow-sm p-4">
+					<h2 class="text-2xl border-b px-1">Frontend:</h2>
+					<ul class="px-0">
+						<li class="border list-none rounded-sm px-3 py-3 border-t-0">HTML5</li>
+						<li class="border list-none rounded-sm px-3 py-3 border-t-0">CSS3</li>
+						<li class="border list-none rounded-sm px-3 py-3 border-t-0">JavaScript</li>
+					</ul>
+				</div>
+				<div class="SkillSet w-full md:w-1/2 lg:w-1/4 bg-white shadow-sm p-4">
+					<h2 class="text-2xl border-b px-1">Backend:</h2>
+					<ul class="px-0">
+						<li class="border list-none rounded-sm px-3 py-3 border-t-0">NodeJS</li>
+						<li class="border list-none rounded-sm px-3 py-3 border-t-0">Express</li>
+						<li class="border list-none rounded-sm px-3 py-3 border-t-0">MongoDB</li>
+					</ul>
+				</div>
+				<div class="SkillSet w-full md:w-1/2 lg:w-1/4 bg-white shadow-sm p-4">
+					<h2 class="text-2xl border-b px-1">Frameworks:</h2>
+					<ul class="px-0">
+						<li class="border list-none rounded-sm px-3 py-3 border-t-0">ReactJS</li>
+						<li class="border list-none rounded-sm px-3 py-3 border-t-0">Bootstrap</li>
+						<li class="border list-none rounded-sm px-3 py-3 border-t-0">Tailwind</li>
+					</ul>
+				</div>
+				<div class="SkillSet w-full md:w-1/2 lg:w-1/4 bg-white shadow-sm p-4">
+					<h2 class="text-2xl border-b px-1">Othe technologies:</h2>
+					<ul class="px-0">
+						<li class="border list-none rounded-sm px-3 py-3 border-t-0">Firebase</li>
+						<li class="border list-none rounded-sm px-3 py-3 border-t-0">WorPress</li>
+						<li class="border list-none rounded-sm px-3 py-3 border-t-0">ElectronJS</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Skills section end -->
+
+		<!-- <About aboutData={content.about} /> -->
+		<div class="About text-center pt-2 pb-12" id="about">
+			<h1 class="text-4xl mt-16 mb-8">About Me</h1>
+			<div class="w-4/5 md:w-1/2 mx-auto bg-green-100 shadow-sm hover:shadow-inner p-4 mb-2">
+				<h3 class="text-xl">
+					lorem ipsum dorelt si amor
+				</h3>
+			</div>
+
+			<div class="w-4/5 md:w-1/2 mx-auto bg-blue-50 shadow-sm hover:shadow-inner p-4 mb-2">
+				<h3 class="text-xl flex items-center justify-center">
+					<a href="https://github.com" target="_blank" rel="noreferrer">
+						<img class="w-8 mx-4" src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg" alt="GitHub" /> 
+					</a> |
+					<a href="https://linkedin.com" target="_blank" rel="noreferrer">
+						<img class="w-8 mx-4" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png" alt="Linkedin" /> 
+					</a> |
+					<a href="https://facebook.com" target="_blank" rel="noreferrer">
+						<img class="w-8 mx-4" src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-facebook-2019-circle-512.png" alt="facebook" />
+					</a>
+				</h3>
+			</div>
+
+			<div class="w-4/5 md:w-1/2 mx-auto bg-indigo-100 shadow-sm hover:shadow-inner p-4">
+				<h3 class="text-xl">
+					Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Accusantium iure possimus eligendi vitae magnam officia asperiores ullam sed delectus deleniti ex dolorum doloremque ipsa obcaecati voluptatibus, natus repellendus eius ipsam!
+				</h3>
+			</div>
+
+			<div class="flex justify-center">
+					<button 
+						onClick="downloadResume()"
+						class="bg-green-400 hover:bg-blue-500 hover:text-white hover:font-bold px-4 py-2 shadow-sm hover:shadow-inner mt-4 transform transition duration-200 ease-in"
+					>
+						Download My Resume
+					</button>
+			</div>
+		</div>
+		<!-- About section end -->
+
+		<!-- <Contact contactData={content.contact} /> -->
+		<div class="Contact w-full bg-gray-100 mx-auto py-10" id="contact">
+			<h1 class="text-4xl text-center my-5">Contact Me</h1>
+			<form class="w-10/12 md:w-2/3 mx-auto" onSubmit="handleSubmit()">
+				<label htmlFor="name" class="text-xl">Name:</label>
+				<input class="w-full bg-white border border-gray-500 px-3 py-1" type="text" 
+					name="name" required="true" />
+				<label htmlFor="name" class="text-xl">Email:</label>
+				<input class="w-full bg-white border border-gray-500 px-3 py-1" type="email" 
+					name="email" required="true" />
+				<label htmlFor="name" class="text-xl">Message:</label>
+				<textarea class="w-full bg-white border border-gray-500 px-3 py-1" name="message" 
+					cols="30" rows="5"></textarea>
+				<button class="w-full py-1 bg-blue-400 hover:text-green-100" type="submit">
+					Submit
+				</button>
+				<span class="text-xl block my-1">Or, mail me at:</span>
+				<a class="w-full block py-1 bg-green-400 text-center hover:text-blue-100" href="mailto:ishmam785@gmail.com">ishmam785@gmail.com</a>
+			</form>
+		</div>
+		<!-- Contact section end -->
+
+		<!-- <Footer /> -->
+		<div class="Footer w-full bg-gray-800 text-white text-center py-3">
+			<h5 class="text-xl">Made with &lt;3 by Ishmam</h5>
+		</div>
+		<!-- Footer section end -->
+
+		<!-- <ScrollUp /> -->
+		<div class="ScrollUp fixed bottom-0 right-0 z-50">
+			<a class="text-xl text-black" href="#hero">
+				<button class="p-2 focus:outline-none">
+					<img class="w-10 md:w-12 transform hover:-translate-y-2 transition duration-200 ease-in-out" src="./images/up-arrow.svg" alt="^" />
+				</button>
+			</a>
+		</div>
+		<!-- ScrollUp end -->
+
+	</div>
+
+
+
+<script src="./app.js"></script>
+</body>
+</html>
